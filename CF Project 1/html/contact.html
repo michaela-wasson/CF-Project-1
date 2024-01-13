@@ -38,31 +38,56 @@
             </nav>
       </header>
 
-        <div>
+      <div class="contact-container">
+        <div class="contact-info">
             <!--I'm not sure I'm comfortable giving my physical address-->
-            Michaela Wasson<br>
+            <h2>Contact Information</h2>
+            <p>Address: </p>
+            <p>
+              Michaela Wasson<br>
             -----<br> 
             -------<br>
             USA<br>
-            <br>
-            <p>My phone number</p><a href="tel: +1 541 313 2064"> tel: +1 541 313 2064</a>
-            <p>Skype</p> <a href="skype:Michaela Wasson"> Michaela Wasson</a>
-            <p>Email </p><a href="mailto:michaelajaewasson@gmail.com">michaelajaewasson@gmail.com</a><br>
+            <br></p>
+            <p>My phone number:</p><a href="tel: +1 541 313 2064"> tel: +1 541 313 2064</a>
+            <p>Skype:</p> <a href="skype:Michaela Wasson"> Michaela Wasson</a>
+            <p>Email: </p><a href="mailto:michaelajaewasson@gmail.com">michaelajaewasson@gmail.com</a>
+            <p>
+              I'm looking forward to hearing from you!
+            </p>
             <a href="mailto:michaelajaewasson@gmail.com">Contact me</a>
-        </div>
-        <form action="" method="post" id="contact-form">
-            <label for="contact-form-email" class="standard-label">Email</label>
-            <input id="contact-form-email" type="email" required>
+          </div>
+        <div class="contact-info">
+        <form class="contact-form" action="" method="post" id="contact-form">
+            <h2>Contact Form</h2>
+            <label for="contact-form-email" class="standard-label">Email </label>
+            <input class="input" id="contact-form-email" type="email" required>
 
-            <label for="contact-form-tel" class="standard-label">Telephone: </label>
-            <input id="contact-form-tel" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            <label for="contact-form-tel" class="standard-label">Telephone </label>
+            <input class="input" id="contact-form-tel" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
-            <label for="contact-form-message" class="standard-label">Message: </label>
-            <textarea id="contact-form-message" maxlength="240" required></textarea>
+            <label for="contact-form-message" class="standard-label">Message  </label>
+            <textarea  class="input" id="contact-form-message" maxlength="240" required></textarea>
 
             <input class="button" type="submit" value="Send message">
         </form>
+      </div>
+    </div>
         
 <script src="../js/tota11y.min.js"></script>
 </body>
+<footer class="page-footer">
+  <p>Find me on</p>
+  <div class="social-media">
+  <!--Add images that represent each website-->
+  <!--Git hub icon-->
+    <img src="../img/github_icon.svg" alt="Github">
+  
+  <!-- Twitter Icon -->
+    <img src="../img/x_icon.svg" alt="Twitter or X">
+
+  <!--Linked in icon-->
+    <img src="../img/linkedin_icon.svg" alt="LinkedIn">
+  </div>
+</footer>
 </html>
