@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 body{
   background-color: #f3e8e8f1;
   font-family: Nanum Myeongjo;
@@ -64,6 +65,31 @@ a:visited{
 a:active{
   color: #36abab;
 }
+
+/* button{
+  border:none;
+  font-family: inherit;
+  font-style:bold;
+  background-color:navy;
+  color:black;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 10px;
+  border-bottom: 2px solid rgba(0,0,0, 0.3);
+}
+
+button:hover, button:focus{
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: lightgray;
+}
+
+.button__secondary {
+  background-color: navy;
+  color: #2b2b2b;
+}
+*/
 
 .button {
   /* overwrites browser defaults and resets the border */
@@ -128,6 +154,28 @@ button:focus,
   color: #000;
 }
 
+.contact-container{
+
+padding: 20px;
+}
+
+.contact-info{
+width: 50%;
+float: left;
+padding: 20px;
+max-width: 100%;
+
+
+}
+
+/*#contact-form{
+display:grid;
+grid-template-columns: max-content max-content;
+grid-gap:5px;
+}*/
+
+
+
 .profile_portrait{
   width: 250px;
   margin-right: 40px;
@@ -141,31 +189,56 @@ button:focus,
   margin: 0 auto;
 }
 
-input{
+.input {
   width:-webkit-fit-content;
   width:-moz-fit-content;
   width:fit-content;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 20px 20px 20px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 2px #36abab;
+  display:inline-block;
+
 }
 
-input[type-text]:focus{
+.input[type=text]:focus{
   border: 2px #36abab;
   border-radius: 4px;
+  
+}
+
+.contact-form label {
+display: inline-block;
+width: 150px;
+
+}
+
+form{
+display: -ms-grid;
+display: grid;
+-ms-grid-columns: 1;
+grid-template-columns: 1;
 }
 
 textarea {
-  width: 200px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 150px;
   padding: 12px 20px;
+  margin: 20px 20px 20px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 2px solid #36abab;
-  border-radius: 4px;
+  border: 2px solid #000;
+  border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.953);
-  resize: none;
+  
+}
+
+textarea:focus{
+border: 2px solid #000;
+border-radius: 4px;
 }
 
 input[type=button] {
@@ -174,7 +247,7 @@ input[type=button] {
   color: #000;
   padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 20px 20px;
   cursor: pointer;
 }
 
@@ -184,7 +257,7 @@ input[type=submit] {
   color: #000;
   padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 20px 20px;
   cursor: pointer;
 }
 
@@ -194,14 +267,16 @@ input[type=reset] {
   color: #000;
   padding: 16px 32px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 20px 20px;
   cursor: pointer;
 }
 
 input[type=button], input[type=submit], input[type=reset] :hover{
-  opacity:0.8;
+
   -webkit-transition-duration: 1s;
+
        -o-transition-duration: 1s;
+
           transition-duration: 1s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
@@ -290,6 +365,7 @@ input[type=button], input[type=submit], input[type=reset] :hover{
   width: 100%;
   height: auto;
   display:block;
+  
 
 }
 
@@ -320,6 +396,8 @@ input[type=button], input[type=submit], input[type=reset] :hover{
   }
 }
 
+
+
 @-webkit-keyframes color-change {
   0% {
     fill: #edc655;
@@ -331,6 +409,8 @@ input[type=button], input[type=submit], input[type=reset] :hover{
     fill: #f76414;
   }
 }
+
+
 
 @keyframes color-change {
   0% {
@@ -357,6 +437,8 @@ input[type=button], input[type=submit], input[type=reset] :hover{
           animation-timing-function: linear;
 } 
 
+
+
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
@@ -367,6 +449,8 @@ input[type=button], input[type=submit], input[type=reset] :hover{
             transform: translate(200px, 50px);
   }
 } 
+
+
 
 @keyframes cloud-move {
   from {
