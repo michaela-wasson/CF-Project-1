@@ -159,20 +159,12 @@ button:focus,
 padding: 20px;
 }
 
-.contact-info{
-width: 50%;
-float: left;
-padding: 20px;
-max-width: 100%;
-}
-
-/*.contact-form{
-  float:right;
-  width: 50%; 
+#contact-info-links{
+  width: 50%;
+  float: left;
   padding: 20px;
   max-width: 100%;
-}*/
-
+}
 
 
 .profile_portrait{
@@ -398,6 +390,30 @@ input[type=button] :hover{
     font-size: 22px;
   }
 }
+
+@media only screen and (max-width:600px){    
+  #contact-info-links{
+
+    z-index: 1;
+  }
+  #contact-form{
+    z-index: 2;
+    display: inline-block;
+      
+  } 
+  form{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns: 1;
+    grid-template-columns: 1;
+
+  }
+  .contact-form-label{
+    display: inline-block;
+    width: 150px;
+  }
+}
+
 
 
 
