@@ -168,12 +168,12 @@ max-width: 100%;
 
 }
 
-
-/*#contact-form{
-display:grid;
-grid-template-columns: max-content max-content;
-grid-gap:5px;
-}*/
+#contact-info-form{
+  float:right;
+  width: 50%; 
+  padding: 20px;
+  max-width: 100%;
+}
 
 
 
@@ -401,7 +401,14 @@ input[type=button] :hover{
   }
 }
 
-
+@media screen and (max-width: 800px) {
+  #contact-form{
+    z-index:1;
+  }
+  #contact-info-links{
+    z-index: 2;
+  }
+}
 
 @-webkit-keyframes color-change {
   0% {
