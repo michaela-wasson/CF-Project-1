@@ -159,7 +159,7 @@ button:focus,
 padding: 20px;
 }
 
-/*.contact-info{
+.contact-info{
 width: 50%;
 float: left;
 padding: 20px;
@@ -168,20 +168,12 @@ max-width: 100%;
 
 }
 
-#contact-form{
+
+/*#contact-form{
 display:grid;
 grid-template-columns: max-content max-content;
 grid-gap:5px;
 }*/
-
-
-
-#contact-info-links{
-width: 50%;
-float: left;
-padding: 20px;
-max-width: 100%;
-}
 
 
 
@@ -407,19 +399,6 @@ input[type=button] :hover{
   h1 {
     font-size: 22px;
   }
-}
-
-
-@media only screen and (max-width:800px){    
-  #contact-info-links{
-
-    z-index: 1;
-  }
-  #contact-form{
-    z-index: 2;
-    display: inline-block;
-      
-  } 
 }
 
 
