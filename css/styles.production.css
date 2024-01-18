@@ -159,7 +159,7 @@ button:focus,
 padding: 20px;
 }
 
-.contact-info{
+/*.contact-info{
 width: 50%;
 float: left;
 padding: 20px;
@@ -168,11 +168,19 @@ max-width: 100%;
 
 }
 
-#contact-info-form{
-  float:right;
-  width: 50%; 
-  padding: 20px;
-  max-width: 100%;
+#contact-form{
+display:grid;
+grid-template-columns: max-content max-content;
+grid-gap:5px;
+}*/
+
+
+
+#contact-info-links{
+width: 50%;
+float: left;
+padding: 20px;
+max-width: 100%;
 }
 
 
@@ -401,14 +409,31 @@ input[type=button] :hover{
   }
 }
 
-@media screen and (max-width: 800px) {
-  #contact-form{
-    z-index:1;
-  }
+
+@media only screen and (max-width:800px){    
   #contact-info-links{
+
+    z-index: 1;
+  }
+  #contact-form{
     z-index: 2;
+    display: inline-block;
+      
+  } 
+  form{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns: 1;
+    grid-template-columns: 1;
+
+  }
+  .contact-form-label{
+    display: inline-block;
+    width: 150px;
   }
 }
+
+
 
 @-webkit-keyframes color-change {
   0% {
